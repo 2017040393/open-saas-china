@@ -6,6 +6,7 @@
  */
 
 import { Image } from "astro:assets";
+import VersionNotice from "starlight-versions/components/VersionNotice.astro";
 import {
   BANNER_PATH,
   checkBannerImageExists,
@@ -24,6 +25,7 @@ const imageExists = checkBannerImageExists({ bannerImageFileName });
 >
   {title}
 </h1>
+<VersionNotice />
 {
   subtitle && (
     <p class="my-2 text-(length:--sl-text-h4) text-(--sl-color-gray-2)">

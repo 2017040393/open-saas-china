@@ -2,6 +2,7 @@ import starlight from "@astrojs/starlight";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
 import starlightBlog from "starlight-blog";
+import starlightVersions from "starlight-versions";
 
 // https://astro.build/config
 export default defineConfig({
@@ -115,6 +116,9 @@ export default defineConfig({
         },
       ],
       plugins: [
+        starlightVersions({
+          versions: [{ slug: "0.23", label: "Wasp ≤0.23" }],
+        }),
         starlightBlog({
           title: "Blog",
           // Our SiteTitle override renders its own Blog link.
