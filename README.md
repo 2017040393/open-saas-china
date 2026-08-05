@@ -13,6 +13,10 @@ https://github.com/user-attachments/assets/3856276b-23e9-455e-a564-b5f26f4f0e98
 
 You've decided to build a SaaS app with the Open SaaS template. Great choice!
 
+## Architecture and China Ecosystem Notes
+
+For a code-grounded overview of the current architecture and the proposed extension points for China ecosystem providers and AI workflows, see the [architecture documentation](docs/architecture/README.md).
+
 This template is:
 
 1. fully open-source
